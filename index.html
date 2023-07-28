@@ -29,9 +29,9 @@
 				  <ul>
 					<li>
 					  <a href="#one">About</a>
+					  <a href="#four">Experience</a>
 					  <a href="#two">Projects</a>
 					  <a href="#three">Technologies</a>
-					  <a href="#four">Experience</a>
 					  <a href="#five">Contact</a>
 					</li>
 				  </ul>
@@ -63,36 +63,79 @@
 							<li><a href="data/resume.pdf" download="SmitDumore-Resume" target="_blank" class="button">Resume</a></li>
 						</ul>
 					</section>
+				
+				<!-- Four -->
+				<section id="four">
+					<h2>Work Experience</h2>
+					<article class="col-12 col-12-xsmall">
+						<div class="row">
+							<h4 class="col-8">Robotics Software Engineer @ <a href="https://www.botsync.co/">Botsync</a></h4> 
+							<div class="col-1"></div>
+							<p class="col-3">(2021 July - 2022 June)</p>
+						</div>
+						<img src="images/thumbs/botsync.png" alt="Robot Image" style="max-width: 100%; height: auto;">
+						<ul>
+							<li>Developed a Hyper Accurate Docking Algorithm for an AMR (Autonomous Mobile Robot) for
+								autonomous recharging in C++14. Experimented with <span style="font-weight: bold;">Iterative Closest Point</span> scan matching and
+								reflective tape based docking. The docking accuracy obtained was <span style="font-weight: bold;">±2cm</span>.
+							</li>
+							<li>Worked on Landmark based Extended <span style="font-weight: bold;">Kalman Filter</span> for localisation of AMR in long corridors. Obtained
+								RMSE of 0.2m and 5 degrees.
+							</li>
+							<li>
+								Successfully tuned and tested custom <span style="font-weight: bold;">Navigation Stack</span> for lifting and tugging applications upto 2 tonnes
+								in various industrial sites.	
+							</li>
+							<li>
+								Developed a Teleoperator package in C++ for controlling an AMR with a joystick.	
+							</li>
+						</ul>
+					</article>
+				
 
 				<!-- Two -->
 					<section id="two">
-						<h2>Recent Projects</h2>
+						<h2>My Projects</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall">
 								<a href="https://github.com/smitdumore/f110-rrt" class="image fit thumb">
 									<img src="images/thumbs/RRT.gif" alt="" /></a>
-								<h3>RRT </h3>
-								<p>descr <span style="font-weight: bold;">this is bold</span>
+								<h3><span style="font-weight: bold;">Autonomous Driving Motion Planning</span></h3>
+								<p> Implemented real-time <span style="font-weight: bold;">RRT and RRT*</span> path planning algorithms using C++11 for local planning in a
+									head-to-head autonomous racing car. Implemented optimization technique using <span style="font-weight: bold;"> Kd-Tree </span>to improve the
+									algorithm's performance.
+									Implemented Pure Pursuit</span> to follow waypoints on the racetrack.
 								</p>
 							</article>
 							<article class="col-6 col-12-xsmall">
 								<a href="https://github.com/smitdumore/f110-mpc" class="image fit thumb">
 									<img src="images/thumbs/mpc.gif" alt="" /></a>
-								<h3>MPC</h3>
-								<p> descr <span style="font-weight: bold;">this is bold </span></p>
+								<h3><span style="font-weight: bold;">Autonomous Driving Model Predictive Control</span></h3>
+								<p> Developed a Model Predictive Controller based racing strategy for better path following and obstacle
+									avoidance performance.
+									Utilised multi-lane switching and opponent motion prediction for safely overtaking the opponent.</p>
 							</article>
 							<article class="col-6 col-12-xsmall">
 								<a href="https://github.com/smitdumore/StereoVisualOdometry" class="image fit thumb">
 									<img src="images/thumbs/stereoVo.gif" alt="" /></a>
-								<h3>Stereo Visual SLAM</h3>
-								<p>descr
+								<h3><span style="font-weight: bold;">Stereo Visual SLAM</span></h3>
+								<p>Successfully implemented Stereo Visual SLAM to estimate the 3D locations of keypoints in stereo images.
+									Utilized <span style="font-weight: bold;">GFTT</span> algorithm for feature detection accurate feature identification across frames.
+									Employed <span style="font-weight: bold;">triangulation</span> to accurately determine the 3D positions of keypoints
+									Implemented direct method and optical flow techniques for pose estimation and feature tracking
+									Performed <span style="font-weight: bold;">Bundle Adjustment</span> as a backend optimization technique, to refine the camera poses and 3D
+									feature locations
 								</p>
 							</article>
 							<article class="col-6 col-12-xsmall">
 								<a href="https://github.com/smitdumore/RL-Pacman" class="image fit thumb">
 									<img src="images/thumbs/pacman.gif" alt="" /></a>
-								<h3>RL RL-Pacman</h3>
-								<p>descr</p>
+								<h3><span style="font-weight: bold;">Reinforcement Learning Pacman Agent</span></h3>
+								<p>Implemented a <span style="font-weight: bold;">BFS , Best first Search, Astar, Dijkstra</span> path finding algorithm to search Ghosts in a
+									Pacman environment.
+									Modelled the Pacman environment as a <span style="font-weight: bold;">MDP</span> (Markov decesion processes) and used Value Iteration to
+									maximise score of Pacman against stochastic and adversarial ghosts.
+									Used <span style="font-weight: bold;">Q-learning</span> to learn optimal actions in a state to maximise Pacman score.</p>
 							</article>
 							<article class="col-6 col-12-xsmall">
 								<a href="https://github.com/smitdumore/recitations_optimal_control" class="image fit thumb">
@@ -115,7 +158,9 @@
 									<img src="images/thumbs/dwa.gif" alt="" /></a>
 								<h3>dynamic window local planner</h3>
 								<p>
-									descr
+									Developed a kino-dynamic local planner for a turtlebot using the Dynamic Window Approach.
+									Planner is capable of dodging dynamic obstacles.
+									Planner generates paths that are kinematically feasible and locally optimal.
 								</p>
 							</article>
 							<article class="col-6 col-12-xsmall">
@@ -146,34 +191,6 @@
 					<a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="70" height="40"/> </a> 
 					<a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="70" height="40"/> </a>
 					</section>
-
-				<!-- Four -->
-				<section id="four">
-					<h2>Work Experience</h2>
-					<article class="col-12 col-12-xsmall">
-						<div class="row">
-							<h4 class="col-8">Robotics Software Engineer @ <a href="https://www.botsync.co/">Botsync</a></h4> 
-							<div class="col-1"></div>
-							<p class="col-3">(2021 July - 2022 June)</p>
-						</div>
-						<img src="images/thumbs/botsync.png" alt="Robot Image" style="max-width: 100%; height: auto;">
-						<ul>
-							<li>Developed a Hyper Accurate Docking Algorithm for an AMR (Autonomous Mobile Robot) for
-								autonomous recharging in C++14. Experimented with Iterative Closest Point scan matching and
-								reflective tape based docking. The docking accuracy obtained was ±2cm.
-							</li>
-							<li>Worked on Landmark based Extended Kalman Filter for localisation of AMR in long corridors. Obtained
-								RMSE of 0.2m and 5 degrees.
-							</li>
-							<li>
-								Successfully tuned and tested custom Navigation Stack for lifting and tugging applications upto 2 tonnes
-								in various industrial sites.	
-							</li>
-							<li>
-								Developed a Teleoperator package in C++ for controlling an AMR with a joystick.	
-							</li>
-						</ul>
-					</article>
 
 
 				<!-- add more work ex-->
