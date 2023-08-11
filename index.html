@@ -110,20 +110,22 @@
 								<a href="https://github.com/smitdumore/f110-mpc" class="image fit thumb">
 									<img src="images/thumbs/mpc.gif" alt="" /></a>
 								<h3><span style="font-weight: bold;">Autonomous Driving Model Predictive Control</span></h3>
-								<p> Developed a Model Predictive Controller based racing strategy for better path following and obstacle
-									avoidance performance comapred to pure pursuit control.
-									Utilised multi-lane switching and opponent motion prediction for safely overtaking the opponent.
-									Used <span style="font-weight: bold;">OSQPEigen</span> library for MPC optimisation. 
+								<p> Developed a Model Predictive Controller(MPC) based racing strategy to find optimal control inputs for trajectory tracking and
+									obstacle avoidance.
+									Used <span style="font-weight: bold;">OSQP</span> library to obtain a solve time of <span style="font-weight: bold;">30ms</span> 
+									for a linear MPC subject to linear constraints and a quadratic cost function.
+									
 								</p>
 							</article>
 							<article class="col-6 col-12-xsmall">
 								<a href="https://github.com/smitdumore/StereoVisualOdometry" class="image fit thumb">
 									<img src="images/thumbs/stereoVo.gif" alt="" /></a>
 								<h3><span style="font-weight: bold;">Stereo Visual SLAM</span></h3>
-								<p>Successfully implemented Stereo Visual SLAM to estimate the 3D locations of keypoints in stereo images.
+								<p>Successfully implemented Stereo Visual SLAM to estimate globally consistent camera trajectory and build a sparse
+									3D map of the environment.
 									Utilized <span style="font-weight: bold;">GFTT</span> algorithm for feature detection accurate feature identification across frames.
 									Employed <span style="font-weight: bold;">triangulation</span> to accurately determine the 3D positions of keypoints
-									Implemented direct method and optical flow techniques for pose estimation and feature tracking
+									Implemented <span style="font-weight: bold;">Lucas Kanade</span> optical flow techniques for feature tracking.
 									Performed <span style="font-weight: bold;">Bundle Adjustment</span> as a backend optimization technique, to refine the camera poses and 3D
 									feature locations
 								</p>
